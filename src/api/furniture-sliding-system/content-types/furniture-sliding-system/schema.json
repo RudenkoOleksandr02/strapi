@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_sliding_systems",
+  "info": {
+    "singularName": "furniture-sliding-system",
+    "pluralName": "furniture-sliding-systems",
+    "displayName": "furniture-sliding-system"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

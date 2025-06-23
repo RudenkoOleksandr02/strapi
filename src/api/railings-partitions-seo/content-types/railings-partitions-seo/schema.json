@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "railings_partitions_seos",
+  "info": {
+    "singularName": "railings-partitions-seo",
+    "pluralName": "railings-partitions-seos",
+    "displayName": "railings-partitions-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}

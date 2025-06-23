@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "showers",
+  "info": {
+    "singularName": "shower",
+    "pluralName": "showers",
+    "displayName": "shower",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "article": {
+      "type": "string",
+      "required": false
+    },
+    "numberHoles": {
+      "type": "biginteger",
+      "required": true
+    },
+    "defaultHeight": {
+      "type": "biginteger",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "metaKeys": {
+      "type": "text",
+      "required": true
+    },
+    "defaultWidth": {
+      "type": "dynamiczone",
+      "components": [
+        "shower.width"
+      ],
+      "required": true
+    },
+    "furnitureColor": {
+      "type": "dynamiczone",
+      "components": [
+        "shower.furniture-color"
+      ],
+      "required": true
+    }
+  }
+}

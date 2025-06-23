@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_handles",
+  "info": {
+    "singularName": "furniture-handle",
+    "pluralName": "furniture-handles",
+    "displayName": "furniture-handle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

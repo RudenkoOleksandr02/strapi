@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_pendulum_systems",
+  "info": {
+    "singularName": "furniture-pendulum-system",
+    "pluralName": "furniture-pendulum-systems",
+    "displayName": "furniture-pendulum-system"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "other_glass_products",
+  "info": {
+    "singularName": "other-glass-product",
+    "pluralName": "other-glass-products",
+    "displayName": "other-glass-product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.values"
+    }
+  }
+}

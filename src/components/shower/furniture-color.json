@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shower_furniture_colors",
+  "info": {
+    "displayName": "furnitureColor"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "priceDollars": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_profiles",
+  "info": {
+    "singularName": "furniture-profile",
+    "pluralName": "furniture-profiles",
+    "displayName": "furniture-profile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

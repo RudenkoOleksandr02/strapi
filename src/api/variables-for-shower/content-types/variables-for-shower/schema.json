@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "variables_for_showers",
+  "info": {
+    "singularName": "variables-for-shower",
+    "pluralName": "variables-for-showers",
+    "displayName": "variables-for-shower"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ordinaryPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "diamondPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "graphitePrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "bronzePrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "mattePrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "linearPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "holesPrice": {
+      "type": "biginteger",
+      "required": true
+    },
+    "hardeningPrice": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_loops",
+  "info": {
+    "singularName": "furniture-loop",
+    "pluralName": "furniture-loops",
+    "displayName": "furniture-loop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

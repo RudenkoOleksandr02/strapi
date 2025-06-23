@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "portfolio_seos",
+  "info": {
+    "singularName": "portfolio-seo",
+    "pluralName": "portfolio-seos",
+    "displayName": "portfolio-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}

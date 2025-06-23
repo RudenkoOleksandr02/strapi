@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "railing_partitions",
+  "info": {
+    "singularName": "railing-partition",
+    "pluralName": "railing-partitions",
+    "displayName": "railing-partition"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.values"
+    }
+  }
+}

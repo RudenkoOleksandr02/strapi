@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mirrors",
+  "info": {
+    "singularName": "mirror",
+    "pluralName": "mirrors",
+    "displayName": "mirror"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.values"
+    }
+  }
+}

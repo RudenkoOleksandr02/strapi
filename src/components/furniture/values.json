@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_furniture_values",
+  "info": {
+    "displayName": "values"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "article": {
+      "type": "string"
+    },
+    "priceDollars": {
+      "type": "biginteger"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

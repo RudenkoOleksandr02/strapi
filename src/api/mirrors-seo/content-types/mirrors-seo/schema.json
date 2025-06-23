@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "mirrors_seos",
+  "info": {
+    "singularName": "mirrors-seo",
+    "pluralName": "mirrors-seos",
+    "displayName": "mirrors-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}

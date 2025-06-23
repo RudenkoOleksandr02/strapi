@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shower_widths",
+  "info": {
+    "displayName": "width"
+  },
+  "options": {},
+  "attributes": {
+    "width": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

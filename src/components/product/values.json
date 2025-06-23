@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_product_values",
+  "info": {
+    "displayName": "values"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pre_description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "metaKeys": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

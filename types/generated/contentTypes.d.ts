@@ -398,6 +398,778 @@ export interface ApiDollarToHryvniaDollarToHryvnia
   };
 }
 
+export interface ApiDoorDoor extends Struct.CollectionTypeSchema {
+  collectionName: 'doors';
+  info: {
+    displayName: 'door';
+    pluralName: 'doors';
+    singularName: 'door';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::door.door'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'product.values', false>;
+  };
+}
+
+export interface ApiDoorsSeoDoorsSeo extends Struct.SingleTypeSchema {
+  collectionName: 'doors_seos';
+  info: {
+    displayName: 'doors-seo';
+    pluralName: 'doors-seos';
+    singularName: 'doors-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::doors-seo.doors-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiFurnitureBarbellFurnitureBarbell
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_barbells';
+  info: {
+    displayName: 'furniture-barbell';
+    pluralName: 'furniture-barbells';
+    singularName: 'furniture-barbell';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-barbell.furniture-barbell'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureFasteningFurnitureFastening
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_fastenings';
+  info: {
+    displayName: 'furniture-fastening';
+    pluralName: 'furniture-fastenings';
+    singularName: 'furniture-fastening';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-fastening.furniture-fastening'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureHandleFurnitureHandle
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_handles';
+  info: {
+    displayName: 'furniture-handle';
+    pluralName: 'furniture-handles';
+    singularName: 'furniture-handle';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-handle.furniture-handle'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureLoopFurnitureLoop
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_loops';
+  info: {
+    displayName: 'furniture-loop';
+    pluralName: 'furniture-loops';
+    singularName: 'furniture-loop';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-loop.furniture-loop'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureOfficeHandleFurnitureOfficeHandle
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_office_handles';
+  info: {
+    displayName: 'furniture-office-handle';
+    pluralName: 'furniture-office-handles';
+    singularName: 'furniture-office-handle';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-office-handle.furniture-office-handle'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurniturePendulumSystemFurniturePendulumSystem
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_pendulum_systems';
+  info: {
+    displayName: 'furniture-pendulum-system';
+    pluralName: 'furniture-pendulum-systems';
+    singularName: 'furniture-pendulum-system';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-pendulum-system.furniture-pendulum-system'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureProfileFurnitureProfile
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_profiles';
+  info: {
+    displayName: 'furniture-profile';
+    pluralName: 'furniture-profiles';
+    singularName: 'furniture-profile';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-profile.furniture-profile'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureSealerFurnitureSealer
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_sealers';
+  info: {
+    displayName: 'furniture-sealer';
+    pluralName: 'furniture-sealers';
+    singularName: 'furniture-sealer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-sealer.furniture-sealer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureShelfMountFurnitureShelfMount
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_shelf_mounts';
+  info: {
+    displayName: 'furniture-shelf-mount';
+    pluralName: 'furniture-shelf-mounts';
+    singularName: 'furniture-shelf-mount';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-shelf-mount.furniture-shelf-mount'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureSlidingSystemFurnitureSlidingSystem
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_sliding_systems';
+  info: {
+    displayName: 'furniture-sliding-system';
+    pluralName: 'furniture-sliding-systems';
+    singularName: 'furniture-sliding-system';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-sliding-system.furniture-sliding-system'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiFurnitureThresholdFurnitureThreshold
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'furniture_thresholds';
+  info: {
+    displayName: 'furniture-threshold';
+    pluralName: 'furniture-thresholds';
+    singularName: 'furniture-threshold';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::furniture-threshold.furniture-threshold'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'furniture.values', false>;
+  };
+}
+
+export interface ApiMirrorMirror extends Struct.CollectionTypeSchema {
+  collectionName: 'mirrors';
+  info: {
+    displayName: 'mirror';
+    pluralName: 'mirrors';
+    singularName: 'mirror';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mirror.mirror'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'product.values', false>;
+  };
+}
+
+export interface ApiMirrorsSeoMirrorsSeo extends Struct.SingleTypeSchema {
+  collectionName: 'mirrors_seos';
+  info: {
+    displayName: 'mirrors-seo';
+    pluralName: 'mirrors-seos';
+    singularName: 'mirrors-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mirrors-seo.mirrors-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiOtherGlassProductOtherGlassProduct
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'other_glass_products';
+  info: {
+    displayName: 'other-glass-product';
+    pluralName: 'other-glass-products';
+    singularName: 'other-glass-product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::other-glass-product.other-glass-product'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'product.values', false>;
+  };
+}
+
+export interface ApiOtherGlassProductsSeoOtherGlassProductsSeo
+  extends Struct.SingleTypeSchema {
+  collectionName: 'other_glass_products_seos';
+  info: {
+    displayName: 'other-glass-products-seo';
+    pluralName: 'other-glass-products-seos';
+    singularName: 'other-glass-products-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::other-glass-products-seo.other-glass-products-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiPortfolioSeoPortfolioSeo extends Struct.SingleTypeSchema {
+  collectionName: 'portfolio_seos';
+  info: {
+    displayName: 'portfolio-seo';
+    pluralName: 'portfolio-seos';
+    singularName: 'portfolio-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::portfolio-seo.portfolio-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiPortfolioPortfolio extends Struct.SingleTypeSchema {
+  collectionName: 'portfolios';
+  info: {
+    displayName: 'portfolio';
+    pluralName: 'portfolios';
+    singularName: 'portfolio';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    door_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::portfolio.portfolio'
+    > &
+      Schema.Attribute.Private;
+    mirror_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    partition_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    photoPrinting_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    railing_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    shelf_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    shower_images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiQuestionQuestion extends Struct.CollectionTypeSchema {
+  collectionName: 'questions';
+  info: {
+    displayName: 'question';
+    pluralName: 'questions';
+    singularName: 'question';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    answer: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::question.question'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    question: Schema.Attribute.Text & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRailingPartitionRailingPartition
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'railing_partitions';
+  info: {
+    displayName: 'railing-partition';
+    pluralName: 'railing-partitions';
+    singularName: 'railing-partition';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::railing-partition.railing-partition'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'product.values', false>;
+  };
+}
+
+export interface ApiRailingsPartitionsSeoRailingsPartitionsSeo
+  extends Struct.SingleTypeSchema {
+  collectionName: 'railings_partitions_seos';
+  info: {
+    displayName: 'railings-partitions-seo';
+    pluralName: 'railings-partitions-seos';
+    singularName: 'railings-partitions-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::railings-partitions-seo.railings-partitions-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiSeoSeo extends Struct.SingleTypeSchema {
+  collectionName: 'seos';
+  info: {
+    displayName: 'seo';
+    pluralName: 'seos';
+    singularName: 'seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::seo.seo'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiShowerShower extends Struct.CollectionTypeSchema {
+  collectionName: 'showers';
+  info: {
+    description: '';
+    displayName: 'shower';
+    pluralName: 'showers';
+    singularName: 'shower';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    article: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    defaultHeight: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    defaultWidth: Schema.Attribute.DynamicZone<['shower.width']> &
+      Schema.Attribute.Required;
+    description: Schema.Attribute.RichText;
+    furnitureColor: Schema.Attribute.DynamicZone<['shower.furniture-color']> &
+      Schema.Attribute.Required;
+    images: Schema.Attribute.Media<'images' | 'files', true> &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shower.shower'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text & Schema.Attribute.Required;
+    metaKeys: Schema.Attribute.Text & Schema.Attribute.Required;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    numberHoles: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiShowersSeoShowersSeo extends Struct.SingleTypeSchema {
+  collectionName: 'showers_seos';
+  info: {
+    displayName: 'showers-seo';
+    pluralName: 'showers-seos';
+    singularName: 'showers-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::showers-seo.showers-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
+export interface ApiVariablesForShowerVariablesForShower
+  extends Struct.SingleTypeSchema {
+  collectionName: 'variables_for_showers';
+  info: {
+    displayName: 'variables-for-shower';
+    pluralName: 'variables-for-showers';
+    singularName: 'variables-for-shower';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bronzePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    diamondPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    graphitePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    hardeningPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    holesPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    linearPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::variables-for-shower.variables-for-shower'
+    > &
+      Schema.Attribute.Private;
+    mattePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    ordinaryPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -908,6 +1680,32 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::dollar-to-hryvnia.dollar-to-hryvnia': ApiDollarToHryvniaDollarToHryvnia;
+      'api::door.door': ApiDoorDoor;
+      'api::doors-seo.doors-seo': ApiDoorsSeoDoorsSeo;
+      'api::furniture-barbell.furniture-barbell': ApiFurnitureBarbellFurnitureBarbell;
+      'api::furniture-fastening.furniture-fastening': ApiFurnitureFasteningFurnitureFastening;
+      'api::furniture-handle.furniture-handle': ApiFurnitureHandleFurnitureHandle;
+      'api::furniture-loop.furniture-loop': ApiFurnitureLoopFurnitureLoop;
+      'api::furniture-office-handle.furniture-office-handle': ApiFurnitureOfficeHandleFurnitureOfficeHandle;
+      'api::furniture-pendulum-system.furniture-pendulum-system': ApiFurniturePendulumSystemFurniturePendulumSystem;
+      'api::furniture-profile.furniture-profile': ApiFurnitureProfileFurnitureProfile;
+      'api::furniture-sealer.furniture-sealer': ApiFurnitureSealerFurnitureSealer;
+      'api::furniture-shelf-mount.furniture-shelf-mount': ApiFurnitureShelfMountFurnitureShelfMount;
+      'api::furniture-sliding-system.furniture-sliding-system': ApiFurnitureSlidingSystemFurnitureSlidingSystem;
+      'api::furniture-threshold.furniture-threshold': ApiFurnitureThresholdFurnitureThreshold;
+      'api::mirror.mirror': ApiMirrorMirror;
+      'api::mirrors-seo.mirrors-seo': ApiMirrorsSeoMirrorsSeo;
+      'api::other-glass-product.other-glass-product': ApiOtherGlassProductOtherGlassProduct;
+      'api::other-glass-products-seo.other-glass-products-seo': ApiOtherGlassProductsSeoOtherGlassProductsSeo;
+      'api::portfolio-seo.portfolio-seo': ApiPortfolioSeoPortfolioSeo;
+      'api::portfolio.portfolio': ApiPortfolioPortfolio;
+      'api::question.question': ApiQuestionQuestion;
+      'api::railing-partition.railing-partition': ApiRailingPartitionRailingPartition;
+      'api::railings-partitions-seo.railings-partitions-seo': ApiRailingsPartitionsSeoRailingsPartitionsSeo;
+      'api::seo.seo': ApiSeoSeo;
+      'api::shower.shower': ApiShowerShower;
+      'api::showers-seo.showers-seo': ApiShowersSeoShowersSeo;
+      'api::variables-for-shower.variables-for-shower': ApiVariablesForShowerVariablesForShower;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_seo_values",
+  "info": {
+    "displayName": "values"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "keywords": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

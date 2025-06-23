@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "other_glass_products_seos",
+  "info": {
+    "singularName": "other-glass-products-seo",
+    "pluralName": "other-glass-products-seos",
+    "displayName": "other-glass-products-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}

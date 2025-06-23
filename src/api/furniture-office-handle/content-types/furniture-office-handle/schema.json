@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_office_handles",
+  "info": {
+    "singularName": "furniture-office-handle",
+    "pluralName": "furniture-office-handles",
+    "displayName": "furniture-office-handle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

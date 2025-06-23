@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furniture_sealers",
+  "info": {
+    "singularName": "furniture-sealer",
+    "pluralName": "furniture-sealers",
+    "displayName": "furniture-sealer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "furniture.values"
+    }
+  }
+}

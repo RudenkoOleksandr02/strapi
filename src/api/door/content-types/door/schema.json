@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doors",
+  "info": {
+    "singularName": "door",
+    "pluralName": "doors",
+    "displayName": "door"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.values"
+    }
+  }
+}

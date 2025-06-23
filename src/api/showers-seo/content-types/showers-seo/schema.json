@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "showers_seos",
+  "info": {
+    "singularName": "showers-seo",
+    "pluralName": "showers-seos",
+    "displayName": "showers-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}

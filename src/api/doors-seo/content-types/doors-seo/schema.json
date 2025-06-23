@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "doors_seos",
+  "info": {
+    "singularName": "doors-seo",
+    "pluralName": "doors-seos",
+    "displayName": "doors-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}
