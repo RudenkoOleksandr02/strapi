@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "dollar_to_hryvnias",
+  "info": {
+    "singularName": "dollar-to-hryvnia",
+    "pluralName": "dollar-to-hryvnias",
+    "displayName": "dollar-to-hryvnia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "value": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
