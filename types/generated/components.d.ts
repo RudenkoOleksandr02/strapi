@@ -3,6 +3,7 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface FurnitureValues extends Struct.ComponentSchema {
   collectionName: 'components_furniture_values';
   info: {
+    description: '';
     displayName: 'values';
   };
   attributes: {
@@ -14,13 +15,14 @@ export interface FurnitureValues extends Struct.ComponentSchema {
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<true>;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    priceDollars: Schema.Attribute.BigInteger;
+    priceDollars: Schema.Attribute.Decimal;
   };
 }
 
 export interface ProductValues extends Struct.ComponentSchema {
   collectionName: 'components_product_values';
   info: {
+    description: '';
     displayName: 'values';
   };
   attributes: {
@@ -31,7 +33,7 @@ export interface ProductValues extends Struct.ComponentSchema {
     metaKeys: Schema.Attribute.Text & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     pre_description: Schema.Attribute.Text;
-    price: Schema.Attribute.BigInteger;
+    price: Schema.Attribute.Decimal;
   };
 }
 
@@ -50,11 +52,12 @@ export interface SeoValues extends Struct.ComponentSchema {
 export interface ShowerFurnitureColor extends Struct.ComponentSchema {
   collectionName: 'components_shower_furniture_colors';
   info: {
+    description: '';
     displayName: 'furnitureColor';
   };
   attributes: {
     color: Schema.Attribute.String & Schema.Attribute.Required;
-    priceDollars: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    priceDollars: Schema.Attribute.Decimal & Schema.Attribute.Required;
   };
 }
 

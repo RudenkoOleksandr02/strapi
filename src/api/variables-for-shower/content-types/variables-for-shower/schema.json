@@ -4,42 +4,43 @@
   "info": {
     "singularName": "variables-for-shower",
     "pluralName": "variables-for-showers",
-    "displayName": "variables-for-shower"
+    "displayName": "variables-for-shower",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "ordinaryPrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "diamondPrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "graphitePrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "bronzePrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "mattePrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "linearPrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "holesPrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     },
     "hardeningPrice": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     }
   }

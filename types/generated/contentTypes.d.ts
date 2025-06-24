@@ -373,6 +373,7 @@ export interface ApiDollarToHryvniaDollarToHryvnia
   extends Struct.SingleTypeSchema {
   collectionName: 'dollar_to_hryvnias';
   info: {
+    description: '';
     displayName: 'dollar-to-hryvnia';
     pluralName: 'dollar-to-hryvnias';
     singularName: 'dollar-to-hryvnia';
@@ -394,7 +395,7 @@ export interface ApiDollarToHryvniaDollarToHryvnia
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    value: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    value: Schema.Attribute.Decimal & Schema.Attribute.Required;
   };
 }
 
@@ -1138,6 +1139,7 @@ export interface ApiVariablesForShowerVariablesForShower
   extends Struct.SingleTypeSchema {
   collectionName: 'variables_for_showers';
   info: {
+    description: '';
     displayName: 'variables-for-shower';
     pluralName: 'variables-for-showers';
     singularName: 'variables-for-shower';
@@ -1146,23 +1148,23 @@ export interface ApiVariablesForShowerVariablesForShower
     draftAndPublish: true;
   };
   attributes: {
-    bronzePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    bronzePrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    diamondPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    graphitePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    hardeningPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    holesPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    linearPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    diamondPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    graphitePrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    hardeningPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    holesPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    linearPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::variables-for-shower.variables-for-shower'
     > &
       Schema.Attribute.Private;
-    mattePrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
-    ordinaryPrice: Schema.Attribute.BigInteger & Schema.Attribute.Required;
+    mattePrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    ordinaryPrice: Schema.Attribute.Decimal & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

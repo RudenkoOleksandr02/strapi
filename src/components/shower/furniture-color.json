@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shower_furniture_colors",
   "info": {
-    "displayName": "furnitureColor"
+    "displayName": "furnitureColor",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,7 +11,7 @@
       "required": true
     },
     "priceDollars": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     }
   }

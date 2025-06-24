@@ -4,14 +4,15 @@
   "info": {
     "singularName": "dollar-to-hryvnia",
     "pluralName": "dollar-to-hryvnias",
-    "displayName": "dollar-to-hryvnia"
+    "displayName": "dollar-to-hryvnia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "value": {
-      "type": "biginteger",
+      "type": "decimal",
       "required": true
     }
   }
