@@ -369,6 +369,34 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCatalogSeoCatalogSeo extends Struct.SingleTypeSchema {
+  collectionName: 'catalog_seos';
+  info: {
+    displayName: 'catalog-seo';
+    pluralName: 'catalog-seos';
+    singularName: 'catalog-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::catalog-seo.catalog-seo'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    values: Schema.Attribute.Component<'seo.values', false>;
+  };
+}
+
 export interface ApiDollarToHryvniaDollarToHryvnia
   extends Struct.SingleTypeSchema {
   collectionName: 'dollar_to_hryvnias';
@@ -1681,6 +1709,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::catalog-seo.catalog-seo': ApiCatalogSeoCatalogSeo;
       'api::dollar-to-hryvnia.dollar-to-hryvnia': ApiDollarToHryvniaDollarToHryvnia;
       'api::door.door': ApiDoorDoor;
       'api::doors-seo.doors-seo': ApiDoorsSeoDoorsSeo;

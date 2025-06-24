@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "catalog_seos",
+  "info": {
+    "singularName": "catalog-seo",
+    "pluralName": "catalog-seos",
+    "displayName": "catalog-seo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.values"
+    }
+  }
+}
